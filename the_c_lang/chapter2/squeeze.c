@@ -1,11 +1,17 @@
+// The function squeeze(s,c) removes all occurrences
+// of the character c from the string s
+
 #include<stdio.h>
 
-
-void squeeze(char s[], int c) {
+    void
+    squeeze(char s[], int c) {
     int i, j;
     for(i = j = 0; s[i] != '\0'; i++) {
         if(s[i] != c) {
             s[j++] = s[i];
+            // can be written as:
+            // s[j] = s[i];
+            // j++;
         }
     }
     s[j] = '\0';
@@ -13,17 +19,11 @@ void squeeze(char s[], int c) {
 }
 
 int main() {
-    char inputString[100]; 
-    int characterToSqueeze;
+    char inputString[] = "Hello, World!";
+    char characterToRemove = 'o';
 
-    printf("Enter a string: ");
-    fgets(inputString, sizeof(inputString), stdin);
+    squeeze(inputString, characterToRemove);
 
-    printf("Enter a character to squeeze: ");
-    scanf("%d", &characterToSqueeze);
-
-    squeeze(inputString, characterToSqueeze);
-    
     printf("Squeezed string: %s\n", inputString);
 
     return 0;
