@@ -5,11 +5,11 @@ TARGET = exercise2
 
 all: $(TARGET)
 
-$(TARGET): exercise2.o
-	$(CC) $(CFLAGS) -o $(TARGET) exercise2-5.o
+$(TARGET): exercise2-7.o
+	$(CC) $(CFLAGS) -o $(TARGET) exercise2-7.o
 
-exercise2.o: exercise2-5.c
-	$(CC) $(CFLAGS) -c exercise2-5.c
+bitwise.o: exercise2-7.c
+	$(CC) $(CFLAGS) -c exercise6-7.c
 
 .PHONY: clean
 clean:
