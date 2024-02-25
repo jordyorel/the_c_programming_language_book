@@ -1,15 +1,15 @@
 CC = gcc
 CFLAGS = -Wall
 
-TARGET = exercise2
+TARGET = lower
 
 all: $(TARGET)
 
-$(TARGET): exercise2-7.o
-	$(CC) $(CFLAGS) -o $(TARGET) exercise2-7.o
+$(TARGET): lower.o
+	$(CC) $(CFLAGS) -o $(TARGET) lower.o
 
-bitwise.o: exercise2-7.c
-	$(CC) $(CFLAGS) -c exercise6-7.c
+bitcount1.o: lower.c
+	$(CC) $(CFLAGS) -c lower.c
 
 .PHONY: clean
 clean:
