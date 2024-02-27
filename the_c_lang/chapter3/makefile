@@ -1,15 +1,15 @@
 CC = gcc
 CFLAGS = -Wall
 
-TARGET = binary
+TARGET = exercise3
 
 all: $(TARGET)
 
-$(TARGET): binary.o
-	$(CC) $(CFLAGS) -o $(TARGET) binarySearch.o
+$(TARGET): exercise3.o
+	$(CC) $(CFLAGS) -o $(TARGET) exercise3-2.o
 
-binary.o: binarySearch.c
-	$(CC) $(CFLAGS) -c binarySearch.c
+exercise3.o: exercise3-2.c
+	$(CC) $(CFLAGS) -c exercise3-2.c
 
 .PHONY: clean
 clean:
