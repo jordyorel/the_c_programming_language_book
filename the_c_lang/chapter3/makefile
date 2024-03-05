@@ -1,15 +1,15 @@
 CC = gcc
 CFLAGS = -Wall
 
-TARGET = exercise3
+TARGET = shellsort
 
 all: $(TARGET)
 
-$(TARGET): exercise3.o
-	$(CC) $(CFLAGS) -o $(TARGET) exercise3-2.o
+$(TARGET): shellsort.o
+	$(CC) $(CFLAGS) -o $(TARGET) shellsort.o
 
-exercise3.o: exercise3-2.c
-	$(CC) $(CFLAGS) -c exercise3-2.c
+shellsort.o: shellsort.c
+	$(CC) $(CFLAGS) -c shellsort.c
 
 .PHONY: clean
 clean:

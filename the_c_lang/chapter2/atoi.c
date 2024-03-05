@@ -1,4 +1,4 @@
-// atoi, converts a string of digits into its numeric equivalent
+/* atoi, converts a string of digits into its numeric equivalent */
 
 #include<stdio.h>
 #include<string.h>
