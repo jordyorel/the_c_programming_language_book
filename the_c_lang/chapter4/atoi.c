@@ -12,17 +12,16 @@ void reverse(char s[]) {
     }
 }
 
-int atoi(int n, char s[]) {
+int atoa(int n, char s[]) {
     int i, sign;
 
     if((sign = n) < 0) {
         n = -n;
     }
     i = 0;
-    do {
-        s[i++] = n % 10 + '0'; /* Get the next digit. */
-        
-    } while ((n /= 10) > 0);
+
+    s[i++] = n % 10 + '0'; /* Get the next digit. */  
+    itoa((n /= 10), s);
 
     if(sign < 0) {
         s[i++] = '-';
@@ -35,6 +34,6 @@ int main() {
     char s[] = "-1234";
     int n = strlen(s);
 
-    printf("h = %d\n", atoi(n, s));
+    printf("h = %d\n", atoa(n, s));
     return 0;
 }

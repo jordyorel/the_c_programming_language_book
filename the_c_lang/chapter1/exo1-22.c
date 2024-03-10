@@ -1,9 +1,7 @@
+/* Write a program to ``fold'' long input lines into two 
+or more shorter lines after the last 
+non-blank character that occurs before the n-th column of input. */
 
-/*
-    Write a program to ``fold'' 
-    long input lines into two or more shorter lines after the last 
-    non-blank character that occurs before the n-th column of input.
-*/
 #define MAX_CHARS 1000
 #define COLUMN_LIMIT 20
 

@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "__config": "c",
+        "algorithm": "c",
+        "queue": "c",
+        "typeinfo": "c",
+        "random": "c",
+        "iosfwd": "c",
+        "functional": "c"
+    }
+}
