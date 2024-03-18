@@ -6,6 +6,7 @@
         "typeinfo": "c",
         "random": "c",
         "iosfwd": "c",
-        "functional": "c"
+        "functional": "c",
+        "__functional_base": "c"
     }
 }

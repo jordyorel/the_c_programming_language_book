@@ -29,7 +29,7 @@ int getint(int *pn) {
     }
     sign = (c == '-') ? -1 : 1;
     if(c == '+' || c == '-') {
-        c = getch();
+        c = getch(); // if c is a sign, get the next character
     }
     for(*pn = 0; isdigit(c); c = getch()) {
         *pn = 10 * *pn + (c - '0');

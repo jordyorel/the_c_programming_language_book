@@ -9,7 +9,6 @@ char longest[MAXLINE];
 
 int get_line(void);
 void copy(void);
-
 char* reverse(char s[], int len);
 void remove_blank(char s[], int len);
 
@@ -61,8 +60,7 @@ int get_line(void) {
 void copy() {
     int i = 0;
     extern char longest[], line[];
-    while ((longest[i] = line[i]) != '\0')
-    {
+    while ((longest[i] = line[i]) != '\0') {
         ++i;
     }
     

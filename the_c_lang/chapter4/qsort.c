@@ -9,7 +9,6 @@ void swap(int v[], int i, int j) {
 
 void qsort(int v[], int left, int right) {
     int i, last;
-    // void swap(int v[], int i, int j);
 
     if(left >= right)
         return;
@@ -20,7 +19,6 @@ void qsort(int v[], int left, int right) {
             swap(v, ++last, i);
     qsort(v, left, last - 1);
     qsort(v, last+1, right);
-
 }
 
 int main() {

@@ -4,10 +4,10 @@
 void reverse(char s[], int i, int j) {
     if(i < j)  {
         char c = s[i];
-        s[i] = s[j];
-        s[j] = c;
-        i++;
-        j--;
+        s[i++] = s[j];
+        s[j++] = c;
+        // i++;
+        // j--;
         reverse(s, i, j);
     }
 }

@@ -7,7 +7,7 @@
 } while(0)
 
 int main() {
-    int a = 5; b = 10;
+    int a = 5, b = 10;
     printf("Before the swap a = %d, b = 5%d\n", a, b);
 
     swap(int, a, b);
